@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Needed Rows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-left">
+        <label>Step 1 : Select File</label><br><br>
+        <input type="file" id="myFile" name="filename"><br><br>
+        <label>Supported File Type : CSV, JSON</label>
+    </div>
+    <div class="top-right">
+        <label>Step 2 : Specify Format</label><br>
+        <p>
+            file type :
+            <select name="filter_31" id="search-box-filter_31" size="3" style="font-size:15px; height:24px;">
+                <option value="CSV">CSV</option>
+                <option value="JSON">JSON</option>
+            </select>
+        </p>
+        <p>
+            Character Encoding :
+            <select name="filter_31" id="search-box-filter_31" size="3" style="font-size:15px; height:24px;">
+                <option value="UTF-8">UTF-8</option>
+                <option value="UTF-16">UTF-16</option>
+            </select>
+        </p>
+        <p>
+            Delermiter :
+            <select name="filter_31" id="search-box-filter_31" size="3" style="font-size:15px; height:24px;">
+                <option value="Comma">Comma</option>
+                <option value="Semi-Colon">Semi-Colon</option>
+            </select>
+        </p>
+        <label for="header">Has Header</label>
+        <input type="checkbox" id="header" name="header" value="Has Header">
+    </div>
+    <div class="last">
+        <label>Step-3 Display Handling</label>
+        <label>Select the fields to be Displayed</label>
+    </div>
+        <input type="submit" id="next" value="Next">
+        <input type="button" id="cancel" value="Cancel">
+    <script src=""></script>
+</body>
+
+</html>
